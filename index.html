@@ -9,23 +9,18 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400&display=swap" rel="stylesheet">
   
   <style>
-    /* 
-      Note: Replace with Editorial New when self-hosting fonts.
-      Playfair Display is a placeholder that captures similar editorial qualities.
-    */
-    
     :root {
       --color-bg: #faf9f7;
       --color-text: #1a1a1a;
       --color-text-secondary: #666666;
       --color-accent: #e63b2e;
       --color-border: #e5e4e1;
-      --font-serif: 'Editorial New', 'Playfair Display', Georgia, 'Times New Roman', serif;
+      --font-serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
       --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      --font-mono: 'PP Model Plastic', 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
+      --font-mono: 'IBM Plex Mono', 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
     }
 
     @media (prefers-color-scheme: dark) {
@@ -145,15 +140,19 @@
     /* Glyphs in intro */
     .glyph {
       display: inline-block;
-      transition: color 0.2s ease, transform 0.3s ease;
+      transition: color 0.2s ease;
     }
 
     .glyph--star {
       font-size: 0.7em;
+      width: 1em;
+      height: 1em;
+      line-height: 1;
+      text-align: center;
       vertical-align: middle;
       position: relative;
-      top: -0.1em;
-      margin: 0 0.1em;
+      top: -0.05em;
+      margin: 0 0.05em;
     }
 
     .glyph--underscore {
